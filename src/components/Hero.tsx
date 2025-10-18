@@ -1,10 +1,17 @@
 import { Button } from "@/components/ui/button";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Mail, Linkedin, Github, Phone } from "lucide-react";
+import profileImage from "@/assets/profile.jpg";
 
 const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center bg-gradient-subtle px-6 py-20">
       <div className="max-w-4xl mx-auto text-center">
+        <Avatar className="w-32 h-32 mx-auto mb-6 ring-4 ring-primary/20">
+          <AvatarImage src={profileImage} alt="Shweta Shivam Bangar" />
+          <AvatarFallback>SB</AvatarFallback>
+        </Avatar>
+        
         <div className="inline-block mb-6 px-6 py-2 bg-primary/10 rounded-full">
           <span className="text-primary font-semibold">Available for new opportunities</span>
         </div>
