@@ -22,7 +22,7 @@ const projects = [
     title: "Plantiful",
     description: "A web application designed to help users manage, track, and care for their indoor and outdoor plants effectively. The app allows users to add plants, set watering and fertilizing schedules, receive reminders, and get plant care tips.",
     techStack: ["HTML", "CSS", "JavaScript", "React", "Public APIs"],
-    link: "#",
+    link: "https://gardening-planner.vercel.app/",
     featured: false
   }
 ];
