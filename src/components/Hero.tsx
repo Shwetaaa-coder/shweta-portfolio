@@ -8,7 +8,7 @@ const Hero = () => {
     <section className="min-h-screen flex items-center justify-center bg-gradient-subtle px-6 py-20">
       <div className="max-w-4xl mx-auto text-center">
         <Avatar className="w-32 h-32 mx-auto mb-6 ring-4 ring-primary/20">
-          <AvatarImage src={profileImage} alt="Shweta Shivam Bangar" />
+          <AvatarImage src={profileImage} alt="Shweta Bangar" />
           <AvatarFallback>SB</AvatarFallback>
         </Avatar>
         
@@ -17,7 +17,7 @@ const Hero = () => {
         </div>
         
         <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
-          Shweta Shivam Bangar
+          Shweta Bangar
         </h1>
         
         <p className="text-2xl md:text-3xl text-foreground/80 mb-4 font-medium">
