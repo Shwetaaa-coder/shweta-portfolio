@@ -1,37 +1,59 @@
 import { Card } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Code2, Layout, Server, Cloud, Wrench, Lightbulb } from "lucide-react";
 
 const skillCategories = [
   {
     title: "Languages",
-    icon: Code2,
-    skills: ["JavaScript", "TypeScript", "HTML", "CSS", "SQL"]
+    skills: [
+      { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+      { name: "TypeScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
+      { name: "HTML", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
+      { name: "CSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
+      { name: "SQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" }
+    ]
   },
   {
     title: "Frontend",
-    icon: Layout,
-    skills: ["React.js", "Redux", "Bootstrap", "Tailwind CSS"]
+    skills: [
+      { name: "React.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+      { name: "Redux", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" },
+      { name: "Bootstrap", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg" },
+      { name: "Tailwind CSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" }
+    ]
   },
   {
     title: "Backend",
-    icon: Server,
-    skills: ["Node.js", "Express.js", "REST APIs"]
+    skills: [
+      { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
+      { name: "Express.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" },
+      { name: "REST APIs", icon: "https://img.icons8.com/fluency/96/json--v1.png" }
+    ]
   },
   {
     title: "Databases & Cloud",
-    icon: Cloud,
-    skills: ["MongoDB", "Firebase", "MySQL", "Microsoft Azure"]
+    skills: [
+      { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+      { name: "Firebase", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" },
+      { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
+      { name: "Microsoft Azure", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" }
+    ]
   },
   {
     title: "Tools & Version Control",
-    icon: Wrench,
-    skills: ["Git", "GitHub", "Visual Studio Code", "npm"]
+    skills: [
+      { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+      { name: "GitHub", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
+      { name: "Visual Studio Code", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
+      { name: "npm", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" }
+    ]
   },
   {
     title: "Other",
-    icon: Lightbulb,
-    skills: ["Data Structures & Algorithms", "OOPs", "Analytical Skills"]
+    skills: [
+      { name: "DOM", icon: "https://cdn-icons-png.flaticon.com/512/443/443138.png" },
+      { name: "JSON", icon: "https://img.icons8.com/fluency/96/json--v1.png" },
+      { name: "Data Structures & Algorithms", icon: "https://img.icons8.com/fluency/96/parse-from-clipboard.png" },
+      { name: "OOPs", icon: "https://img.icons8.com/fluency/96/module.png" }
+    ]
   }
 ];
 
@@ -47,35 +69,36 @@ const Skills = () => {
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {skillCategories.map((category, index) => {
-            const IconComponent = category.icon;
-            return (
-              <Card 
-                key={index} 
-                className="p-6 bg-gradient-card shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-              >
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                    <IconComponent className="w-5 h-5 text-primary" />
+          {skillCategories.map((category, index) => (
+            <Card 
+              key={index} 
+              className="p-6 bg-gradient-card shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+            >
+              <h3 className="text-xl font-semibold mb-6 text-primary text-center">
+                {category.title}
+              </h3>
+              <div className="flex flex-wrap gap-4 justify-center">
+                {category.skills.map((skill, skillIndex) => (
+                  <div 
+                    key={skillIndex} 
+                    className="flex flex-col items-center gap-2 group"
+                    title={skill.name}
+                  >
+                    <div className="w-12 h-12 flex items-center justify-center rounded-lg bg-card-foreground/5 group-hover:bg-primary/10 transition-colors duration-300">
+                      <img 
+                        src={skill.icon} 
+                        alt={skill.name}
+                        className="w-8 h-8 object-contain"
+                      />
+                    </div>
+                    <span className="text-xs text-muted-foreground group-hover:text-foreground transition-colors duration-300">
+                      {skill.name}
+                    </span>
                   </div>
-                  <h3 className="text-xl font-semibold text-primary">
-                    {category.title}
-                  </h3>
-                </div>
-                <div className="flex flex-wrap gap-2">
-                  {category.skills.map((skill, skillIndex) => (
-                    <Badge 
-                      key={skillIndex} 
-                      variant="secondary"
-                      className="px-3 py-1 text-sm"
-                    >
-                      {skill}
-                    </Badge>
-                  ))}
-                </div>
-              </Card>
-            );
-          })}
+                ))}
+              </div>
+            </Card>
+          ))}
         </div>
       </div>
     </section>
