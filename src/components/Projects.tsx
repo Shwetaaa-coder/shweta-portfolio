@@ -12,7 +12,7 @@ const projects = [
     description: "Solo-built web app using HTML/CSS/JavaScript & Firebase Auth + Realtime DB to let users securely track daily habits with live syncing.",
     techStack: ["HTML", "CSS", "JavaScript", "Firebase Auth", "Realtime Database"],
     link: "https://healthy-habits-tracker-byshweta.netlify.app",
-    github: "https://github.com/Shwetaaa-coder/healthy-habits",
+    github: "https://github.com/Shwetaaa-coder/Health-Tracker",
     image: healthyHabitsImg
   },
   {
@@ -20,7 +20,7 @@ const projects = [
     description: "Built meme-sharing platform with real-time updates (Firebase DB) and Cloudinary-powered uploads, deployed in a tight hackathon build. Masai School Hackathon Project.",
     techStack: ["HTML", "CSS", "JavaScript", "Firebase", "Cloudinary"],
     link: "https://memeshubbyshweta.netlify.app",
-    github: "https://github.com/Shwetaaa-coder/memehub",
+    github: "https://github.com/Shwetaaa-coder/Hackathons-project",
     image: memehubImg
   },
   {
@@ -28,7 +28,7 @@ const projects = [
     description: "A web application designed to help users manage, track, and care for their indoor and outdoor plants effectively. The app allows users to add plants, set watering and fertilizing schedules, receive reminders, and get plant care tips.",
     techStack: ["HTML", "CSS", "JavaScript", "React", "Public APIs"],
     link: "https://gardening-planner.vercel.app/",
-    github: "https://github.com/Shwetaaa-coder/plantiful",
+    github: "https://github.com/Shwetaaa-coder/plant-app",
     image: plantifulImg
   }
 ];

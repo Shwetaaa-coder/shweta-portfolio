@@ -33,18 +33,6 @@ const Hero = () => {
             
             <div className="flex flex-wrap items-center justify-center md:justify-start gap-3 mb-8">
               <Button 
-                variant="default" 
-                size="lg" 
-                className="gap-2 shadow-glow"
-                asChild
-              >
-                <a href="mailto:shwetavanve8@gmail.com">
-                  <Mail className="w-5 h-5" />
-                  Get in Touch
-                </a>
-              </Button>
-              
-              <Button 
                 variant="outline" 
                 size="lg" 
                 className="gap-2"
