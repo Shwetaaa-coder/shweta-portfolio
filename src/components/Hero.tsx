@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-import { Mail, Linkedin, Github, Phone } from "lucide-react";
+import { Mail, Linkedin, Github, Phone, FileText } from "lucide-react";
 import profileImage from "@/assets/profile.jpg";
 
 const Hero = () => {
@@ -39,6 +39,18 @@ const Hero = () => {
             <a href="mailto:shwetavanve8@gmail.com">
               <Mail className="w-5 h-5" />
               Get in Touch
+            </a>
+          </Button>
+          
+          <Button 
+            variant="outline" 
+            size="lg" 
+            className="gap-2"
+            asChild
+          >
+            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+              <FileText className="w-5 h-5" />
+              View Resume
             </a>
           </Button>
           

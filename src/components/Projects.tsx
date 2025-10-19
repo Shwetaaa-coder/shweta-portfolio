@@ -2,6 +2,9 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink } from "lucide-react";
+import healthyHabitsImg from "@/assets/healthy-habits.jpg";
+import memehubImg from "@/assets/memehub.jpg";
+import plantifulImg from "@/assets/plantiful.png";
 
 const projects = [
   {
@@ -9,6 +12,7 @@ const projects = [
     description: "Solo-built web app using HTML/CSS/JavaScript & Firebase Auth + Realtime DB to let users securely track daily habits with live syncing.",
     techStack: ["HTML", "CSS", "JavaScript", "Firebase Auth", "Realtime Database"],
     link: "https://healthy-habits-tracker-byshweta.netlify.app",
+    image: healthyHabitsImg,
     featured: true
   },
   {
@@ -16,6 +20,7 @@ const projects = [
     description: "Built meme-sharing platform with real-time updates (Firebase DB) and Cloudinary-powered uploads, deployed in a tight hackathon build. Masai School Hackathon Project.",
     techStack: ["HTML", "CSS", "JavaScript", "Firebase", "Cloudinary"],
     link: "https://memeshubbyshweta.netlify.app",
+    image: memehubImg,
     featured: true
   },
   {
@@ -23,6 +28,7 @@ const projects = [
     description: "A web application designed to help users manage, track, and care for their indoor and outdoor plants effectively. The app allows users to add plants, set watering and fertilizing schedules, receive reminders, and get plant care tips.",
     techStack: ["HTML", "CSS", "JavaScript", "React", "Public APIs"],
     link: "https://gardening-planner.vercel.app/",
+    image: plantifulImg,
     featured: false
   }
 ];
@@ -42,43 +48,53 @@ const Projects = () => {
           {projects.map((project, index) => (
             <Card 
               key={index} 
-              className={`p-6 bg-gradient-card shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 ${
+              className={`overflow-hidden bg-gradient-card shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 ${
                 project.featured ? 'lg:col-span-2' : ''
               }`}
             >
               <div className="flex flex-col h-full">
-                <h3 className="text-2xl font-bold mb-3">
-                  {project.title}
-                </h3>
-                
-                <p className="text-foreground/80 mb-4 flex-1">
-                  {project.description}
-                </p>
-                
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.techStack.map((tech, techIndex) => (
-                    <Badge 
-                      key={techIndex} 
-                      variant="outline"
-                      className="border-primary/30"
-                    >
-                      {tech}
-                    </Badge>
-                  ))}
+                <div className="w-full h-64 overflow-hidden">
+                  <img 
+                    src={project.image} 
+                    alt={project.title}
+                    className="w-full h-full object-cover object-top"
+                  />
                 </div>
                 
-                {project.link !== "#" && (
-                  <Button 
-                    variant="outline" 
-                    className="w-fit gap-2"
-                    asChild
-                  >
-                    <a href={project.link} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="w-4 h-4" />
-                      View Project
-                    </a>
-                  </Button>
-                )}
+                <div className="p-6 flex flex-col flex-1">
+                  <h3 className="text-2xl font-bold mb-3">
+                    {project.title}
+                  </h3>
+                  
+                  <p className="text-foreground/80 mb-4 flex-1">
+                    {project.description}
+                  </p>
+                  
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {project.techStack.map((tech, techIndex) => (
+                      <Badge 
+                        key={techIndex} 
+                        variant="outline"
+                        className="border-primary/30"
+                      >
+                        {tech}
+                      </Badge>
+                    ))}
+                  </div>
+                  
+                  {project.link !== "#" && (
+                    <Button 
+                      variant="outline" 
+                      className="w-fit gap-2"
+                      asChild
+                    >
+                      <a href={project.link} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="w-4 h-4" />
+                        View Project
+                      </a>
+                    </Button>
+                  )}
+                </div>
               </div>
             </Card>
           ))}
