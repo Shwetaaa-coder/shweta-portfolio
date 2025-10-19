@@ -1,17 +1,8 @@
 import { Card } from "@/components/ui/card";
-import { Briefcase, GraduationCap } from "lucide-react";
+import { GraduationCap } from "lucide-react";
 
-const experiences = [
+const education = [
   {
-    type: "work",
-    title: "Full Stack Web Development Intern",
-    organization: "A2Z Infotech",
-    location: "Ahmednagar",
-    period: "02/2021 – 07/2021",
-    description: "Developed and maintained responsive web applications using HTML, CSS, JavaScript & basic backend under senior guidance, gaining real-world full-stack and problem-solving experience."
-  },
-  {
-    type: "education",
     title: "Full Stack Web Development",
     organization: "Masai School",
     location: "Bengaluru, India",
@@ -19,7 +10,6 @@ const experiences = [
     description: "Currently pursuing comprehensive full-stack web development training"
   },
   {
-    type: "education",
     title: "Azure Cloud Training",
     organization: "Ethan's Tech",
     location: "Pune, India",
@@ -27,7 +17,6 @@ const experiences = [
     description: "Completed specialized training in Microsoft Azure cloud services"
   },
   {
-    type: "education",
     title: "Bachelor of Computer Engineering",
     organization: "G.H. Raisoni College of Engineering and Management",
     location: "Ahmednagar",
@@ -38,17 +27,17 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <section className="py-20 px-6 bg-gradient-subtle" id="experience">
+    <section className="py-20 px-6 bg-gradient-subtle" id="education">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center">
-          Experience & <span className="bg-gradient-primary bg-clip-text text-transparent">Education</span>
+          <span className="bg-gradient-primary bg-clip-text text-transparent">Education</span>
         </h2>
         <p className="text-center text-muted-foreground mb-12">
-          My professional journey and educational background
+          My educational background and training
         </p>
         
         <div className="space-y-6">
-          {experiences.map((exp, index) => (
+          {education.map((edu, index) => (
             <Card 
               key={index} 
               className="p-6 bg-card shadow-md hover:shadow-lg transition-all duration-300"
@@ -56,28 +45,24 @@ const Experience = () => {
               <div className="flex gap-4">
                 <div className="flex-shrink-0">
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                    {exp.type === "work" ? (
-                      <Briefcase className="w-6 h-6 text-primary" />
-                    ) : (
-                      <GraduationCap className="w-6 h-6 text-primary" />
-                    )}
+                    <GraduationCap className="w-6 h-6 text-primary" />
                   </div>
                 </div>
                 
                 <div className="flex-1">
                   <h3 className="text-xl font-semibold mb-1">
-                    {exp.title}
+                    {edu.title}
                   </h3>
                   <p className="text-primary font-medium mb-2">
-                    {exp.organization}
+                    {edu.organization}
                   </p>
                   <div className="flex flex-wrap gap-4 text-sm text-muted-foreground mb-3">
-                    <span>{exp.period}</span>
+                    <span>{edu.period}</span>
                     <span>•</span>
-                    <span>{exp.location}</span>
+                    <span>{edu.location}</span>
                   </div>
                   <p className="text-foreground/80">
-                    {exp.description}
+                    {edu.description}
                   </p>
                 </div>
               </div>
