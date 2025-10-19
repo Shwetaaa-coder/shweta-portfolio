@@ -18,10 +18,6 @@ const Hero = () => {
 
           {/* Right Side - Info */}
           <div className="text-center md:text-left">
-            <div className="inline-block mb-6 px-6 py-2 bg-primary/10 rounded-full">
-              <span className="text-primary font-semibold">Available for new opportunities</span>
-            </div>
-            
             <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
               Shweta Bangar
             </h1>
