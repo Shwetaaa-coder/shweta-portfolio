@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 import healthyHabitsImg from "@/assets/healthy-habits.jpg";
 import memehubImg from "@/assets/memehub.jpg";
 import plantifulImg from "@/assets/plantiful.png";
@@ -12,24 +12,24 @@ const projects = [
     description: "Solo-built web app using HTML/CSS/JavaScript & Firebase Auth + Realtime DB to let users securely track daily habits with live syncing.",
     techStack: ["HTML", "CSS", "JavaScript", "Firebase Auth", "Realtime Database"],
     link: "https://healthy-habits-tracker-byshweta.netlify.app",
-    image: healthyHabitsImg,
-    featured: true
+    github: "https://github.com/Shwetaaa-coder/healthy-habits",
+    image: healthyHabitsImg
   },
   {
     title: "MemeHub",
     description: "Built meme-sharing platform with real-time updates (Firebase DB) and Cloudinary-powered uploads, deployed in a tight hackathon build. Masai School Hackathon Project.",
     techStack: ["HTML", "CSS", "JavaScript", "Firebase", "Cloudinary"],
     link: "https://memeshubbyshweta.netlify.app",
-    image: memehubImg,
-    featured: true
+    github: "https://github.com/Shwetaaa-coder/memehub",
+    image: memehubImg
   },
   {
     title: "Plantiful",
     description: "A web application designed to help users manage, track, and care for their indoor and outdoor plants effectively. The app allows users to add plants, set watering and fertilizing schedules, receive reminders, and get plant care tips.",
     techStack: ["HTML", "CSS", "JavaScript", "React", "Public APIs"],
     link: "https://gardening-planner.vercel.app/",
-    image: plantifulImg,
-    featured: false
+    github: "https://github.com/Shwetaaa-coder/plantiful",
+    image: plantifulImg
   }
 ];
 
@@ -44,13 +44,11 @@ const Projects = () => {
           Recent projects showcasing my skills in full-stack development
         </p>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects.map((project, index) => (
             <Card 
               key={index} 
-              className={`overflow-hidden bg-gradient-card shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 ${
-                project.featured ? 'lg:col-span-2' : ''
-              }`}
+              className="overflow-hidden bg-gradient-card shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
             >
               <div className="flex flex-col h-full">
                 <div className="w-full h-64 overflow-hidden">
@@ -82,18 +80,30 @@ const Projects = () => {
                     ))}
                   </div>
                   
-                  {project.link !== "#" && (
+                  <div className="flex gap-3">
                     <Button 
                       variant="outline" 
-                      className="w-fit gap-2"
+                      size="sm"
+                      className="gap-2 flex-1"
+                      asChild
+                    >
+                      <a href={project.github} target="_blank" rel="noopener noreferrer">
+                        <Github className="w-4 h-4" />
+                        GitHub
+                      </a>
+                    </Button>
+                    <Button 
+                      variant="default" 
+                      size="sm"
+                      className="gap-2 flex-1"
                       asChild
                     >
                       <a href={project.link} target="_blank" rel="noopener noreferrer">
                         <ExternalLink className="w-4 h-4" />
-                        View Project
+                        Demo
                       </a>
                     </Button>
-                  )}
+                  </div>
                 </div>
               </div>
             </Card>
