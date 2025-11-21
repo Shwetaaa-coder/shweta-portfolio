@@ -38,7 +38,7 @@ const Hero = () => {
                 className="gap-2"
                 asChild
               >
-                <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                <a href="https://drive.google.com/file/d/1am4qAF_srtjuNlGWSyq7fBHhYjtS6vx6/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                   <FileText className="w-5 h-5" />
                   Resume
                 </a>
