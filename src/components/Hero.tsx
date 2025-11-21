@@ -38,7 +38,7 @@ const Hero = () => {
                 className="gap-2"
                 asChild
               >
-                <a href="/Shweta_Bangar_Resume.pdf" target="_blank" rel="noopener noreferrer" download>
+                <a href="/Shweta_Bangar_Resume.pdf" target="_blank" rel="noopener noreferrer">
                   <FileText className="w-5 h-5" />
                   Resume
                 </a>
