@@ -36,12 +36,18 @@ const Hero = () => {
                 variant="outline" 
                 size="lg" 
                 className="gap-2"
-                asChild
+                onClick={() => {
+                  // Open in new tab
+                  window.open("/Shweta_Bangar_Resume.pdf", "_blank");
+                  // Trigger download
+                  const link = document.createElement("a");
+                  link.href = "/Shweta_Bangar_Resume.pdf";
+                  link.download = "Shweta_Bangar_Resume.pdf";
+                  link.click();
+                }}
               >
-                <a href="/Shweta_Bangar_Resume.pdf" target="_blank" rel="noopener noreferrer" download="Shweta_Bangar_Resume.pdf">
-                  <FileText className="w-5 h-5" />
-                  Resume
-                </a>
+                <FileText className="w-5 h-5" />
+                Resume
               </Button>
               
               <Button 
