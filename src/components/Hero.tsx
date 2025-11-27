@@ -38,7 +38,21 @@ const Hero = () => {
                 className="gap-2"
                 asChild
               >
-                <a href="/Shweta_Bangar_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                <a 
+                  href="/Shweta_Bangar_Resume.pdf" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  onClick={() => {
+                    setTimeout(() => {
+                      const link = document.createElement("a");
+                      link.href = "/Shweta_Bangar_Resume.pdf";
+                      link.download = "Shweta_Bangar_Resume.pdf";
+                      document.body.appendChild(link);
+                      link.click();
+                      document.body.removeChild(link);
+                    }, 100);
+                  }}
+                >
                   <FileText className="w-5 h-5" />
                   Resume
                 </a>
