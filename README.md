@@ -1,73 +1,150 @@
-# Welcome to your Lovable project
+# shweta-portfolio
 
-## Project info
+Shweta Shivam Bangar
+Software Developer
+shwetavanve8@gmail.com
++91-7498924720/7527939842
+https://www.linkedin.com/in/shweta-bangar
+https://github.com/Shwetaaa-coder
+EDUCATION
+Full
+Stack
+Web
+Development
+Masai
+School,
+Bengaluru,
+India
+02/2025 – Present
+Azure
+Cloud
+Training
+Ethan’s
+Tech
+September
+2022
+–
+October
+2022.
+09/2022 – 10/2022
+|
+Pune, India
+Bachelor
+of
+Computer
+Engineering
+G.H.
+Raisoni
+College
+of
+Engineering
+and
+Management,Ahmednagar.
+06/2021
+Graduated: June 2021 | CGPA: 7.56/10
+SKILLS:
+Languages
+Javascript, Typescript, React,
+HTML, CSS, SQL
+Frontend
+React.JS(framework), Redux
+, Bootstrap, Tailwind CSS
+Backend
+Node.js,
+Express.js, REST APIS
+Databases and Cloud
+Mongo DB, Firebase
+(Firestore, Auth, Hosting),
+MySQL, Microsoft Azure(App
+Services, Functions, Storage)
+Version control
+Git,
+Sublime Text, Visual Studio
+Code, npn, GitHub
+Other
+Data Structures & Algorithms, OOPs Concepts, Analytical Skills
+WORK EXPERIENCE
+Full
+Stack
+Web
+Development
+Intern
+A2Z
+Infotech
+02/2021 – 07/2021
+|
+Ahmednagar
+•
+Developed and maintained responsive web applications using HTML, CSS, JavaScript & basic backend under senior guidance, gaining real- world full-stack and problem-solving experience.
+PROJECTS
+Healthy
+Habits
+Tracker
+Tech
+Stack:
+HTML,
+CSS,
+JavaScript,
+Firebase
+(Auth
++
+Realtime
+Database)
+Project
+link:
+https://healthy-habits-tracker-byshweta.netlify.app
+Solo-built web app using HTML/CSS/JavaScript & Firebase Auth + Realtime DB to let users securely track daily habits with live syncing.
+MemeHub
+–
+Masai
+School
+Hackathon
+Project
+Tech
+Stack:
+HTML,
+CSS,
+JavaScript,
+Firebase,
+Cloudinary
+Project
+link:
+https://memeshubbyshweta.netlify.app
+Built meme-sharing platform with real-time updates (Firebase DB) and Cloudinary-powered uploads, deployed in a tight hackathon build..
+Plantiful
+Tech
+Stack-HTML,
+CSS,
+JavaScript,
+Public
+APIs,
+React
+A web application designed to help users manage, track, and care for their indoor and outdoor plants effectively. The app allows users to add plants, set watering and fertilizing schedules, receive reminders, and get plant care tips.
+CERTIFICATION
+AZ-900 (Microsoft Azure Fundamental Certificate)
+Xto10X Hackathon – Edition 4.0
+Masai School
+ICITC Conference 2021 make portfolio
 
-**URL**: https://lovable.dev/projects/ce173a6d-c255-4424-953c-0dc98ae41b45
+This project was built with [Lovable](https://lovable.dev).
 
-## How can I edit this code?
+**Live app**: https://shweta-portfolio.lovable.app
 
-There are several ways of editing your application.
+## Build with Lovable
 
-**Use Lovable**
+Continue developing this project in the [Lovable editor](https://lovable.dev/projects/ce173a6d-c255-4424-953c-0dc98ae41b45).
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/ce173a6d-c255-4424-953c-0dc98ae41b45) and start prompting.
+- **Ship faster**: describe what you want to build and Lovable handles the code.
+- **Stay in sync**: every change made in Lovable is committed straight to this repository.
+- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
 
-Changes made via Lovable will be committed automatically to this repo.
+## Development
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
+git clone <this-repository-url>
+cd <repository-name>
 npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
 ```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/ce173a6d-c255-4424-953c-0dc98ae41b45) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
