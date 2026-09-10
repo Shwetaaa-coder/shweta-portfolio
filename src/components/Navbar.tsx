@@ -4,6 +4,27 @@ import { useState } from "react";
 
 const resumeUrl = "/Shweta_Bangar_Resume.pdf";
 
+const ResumeLink = () => (
+  <a
+    href={resumeUrl}
+    target="_blank"
+    rel="noopener noreferrer"
+    onClick={() => {
+      setTimeout(() => {
+        const link = document.createElement("a");
+        link.href = resumeUrl;
+        link.download = "Shweta_Bangar_Resume.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }, 100);
+    }}
+  >
+    <FileText className="w-4 h-4" />
+    Resume
+  </a>
+);
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -14,27 +35,6 @@ const Navbar = () => {
     { name: "Projects", href: "#projects" },
     { name: "Contact", href: "#contact" },
   ];
-
-  const resumeLink = (
-    <a
-      href={resumeUrl}
-      target="_blank"
-      rel="noopener noreferrer"
-      onClick={() => {
-        setTimeout(() => {
-          const link = document.createElement("a");
-          link.href = resumeUrl;
-          link.download = "Shweta_Bangar_Resume.pdf";
-          document.body.appendChild(link);
-          link.click();
-          document.body.removeChild(link);
-        }, 100);
-      }}
-    >
-      <FileText className="w-4 h-4" />
-      Resume
-    </a>
-  );
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b">
@@ -56,7 +56,7 @@ const Navbar = () => {
               </a>
             ))}
             <Button variant="outline" size="sm" className="gap-2" asChild>
-              {resumeLink}
+              <ResumeLink />
             </Button>
           </div>
 
@@ -86,7 +86,7 @@ const Navbar = () => {
             ))}
             <div className="py-2">
               <Button variant="outline" size="sm" className="gap-2" asChild>
-                {resumeLink}
+                <ResumeLink />
               </Button>
             </div>
           </div>
