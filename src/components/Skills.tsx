@@ -54,6 +54,17 @@ const skillCategories = [
       { name: "Data Structures & Algorithms", icon: "https://img.icons8.com/fluency/96/parse-from-clipboard.png" },
       { name: "OOPs", icon: "https://img.icons8.com/fluency/96/module.png" }
     ]
+  },
+  {
+    title: "Soft Skills",
+    skills: [
+      { name: "Communication", icon: "https://img.icons8.com/fluency/96/chat.png" },
+      { name: "Problem Solving", icon: "https://img.icons8.com/fluency/96/puzzle.png" },
+      { name: "Teamwork", icon: "https://img.icons8.com/fluency/96/conference-call.png" },
+      { name: "Time Management", icon: "https://img.icons8.com/fluency/96/clock.png" },
+      { name: "Adaptability", icon: "https://img.icons8.com/fluency/96/change.png" },
+      { name: "Critical Thinking", icon: "https://img.icons8.com/fluency/96/brain.png" }
+    ]
   }
 ];
 
@@ -65,7 +76,7 @@ const Skills = () => {
           Technical <span className="bg-gradient-primary bg-clip-text text-transparent">Skills</span>
         </h2>
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Proficient in modern web technologies and cloud platforms
+          Proficient in modern web technologies, cloud platforms, and essential soft skills
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

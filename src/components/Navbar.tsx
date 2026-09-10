@@ -1,16 +1,28 @@
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, FileText } from "lucide-react";
 import { useState } from "react";
+
+const resumeUrl = "/Shweta_Bangar_Resume.pdf";
+
+const handleResumeClick = () => {
+  setTimeout(() => {
+    const link = document.createElement("a");
+    link.href = resumeUrl;
+    link.download = "Shweta_Bangar_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }, 100);
+};
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
     { name: "Home", href: "#" },
+    { name: "About", href: "#about" },
     { name: "Skills", href: "#skills" },
-    { name: "Education", href: "#education" },
     { name: "Projects", href: "#projects" },
-    { name: "Certifications", href: "#certifications" },
     { name: "Contact", href: "#contact" },
   ];
 
@@ -33,6 +45,16 @@ const Navbar = () => {
                 {link.name}
               </a>
             ))}
+            <a
+              href={resumeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={handleResumeClick}
+              className="inline-flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors font-medium"
+            >
+              <FileText className="w-4 h-4" />
+              Resume
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -59,6 +81,16 @@ const Navbar = () => {
                 {link.name}
               </a>
             ))}
+            <a
+              href={resumeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={handleResumeClick}
+              className="flex items-center gap-2 py-2 text-foreground/80 hover:text-primary transition-colors font-medium"
+            >
+              <FileText className="w-4 h-4" />
+              Resume
+            </a>
           </div>
         )}
       </div>
