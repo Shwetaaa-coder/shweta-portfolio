@@ -1,150 +1,91 @@
-# shweta-portfolio
+# Shweta Bangar | Full Stack Developer Portfolio
 
-Shweta Shivam Bangar
-Software Developer
-shwetavanve8@gmail.com
-+91-7498924720/7527939842
-https://www.linkedin.com/in/shweta-bangar
-https://github.com/Shwetaaa-coder
-EDUCATION
-Full
-Stack
-Web
-Development
-Masai
-School,
-Bengaluru,
-India
-02/2025 – Present
-Azure
-Cloud
-Training
-Ethan’s
-Tech
-September
-2022
-–
-October
-2022.
-09/2022 – 10/2022
-|
-Pune, India
-Bachelor
-of
-Computer
-Engineering
-G.H.
-Raisoni
-College
-of
-Engineering
-and
-Management,Ahmednagar.
-06/2021
-Graduated: June 2021 | CGPA: 7.56/10
-SKILLS:
-Languages
-Javascript, Typescript, React,
-HTML, CSS, SQL
-Frontend
-React.JS(framework), Redux
-, Bootstrap, Tailwind CSS
-Backend
-Node.js,
-Express.js, REST APIS
-Databases and Cloud
-Mongo DB, Firebase
-(Firestore, Auth, Hosting),
-MySQL, Microsoft Azure(App
-Services, Functions, Storage)
-Version control
-Git,
-Sublime Text, Visual Studio
-Code, npn, GitHub
-Other
-Data Structures & Algorithms, OOPs Concepts, Analytical Skills
-WORK EXPERIENCE
-Full
-Stack
-Web
-Development
-Intern
-A2Z
-Infotech
-02/2021 – 07/2021
-|
-Ahmednagar
-•
-Developed and maintained responsive web applications using HTML, CSS, JavaScript & basic backend under senior guidance, gaining real- world full-stack and problem-solving experience.
-PROJECTS
-Healthy
-Habits
-Tracker
-Tech
-Stack:
-HTML,
-CSS,
-JavaScript,
-Firebase
-(Auth
-+
-Realtime
-Database)
-Project
-link:
-https://healthy-habits-tracker-byshweta.netlify.app
-Solo-built web app using HTML/CSS/JavaScript & Firebase Auth + Realtime DB to let users securely track daily habits with live syncing.
-MemeHub
-–
-Masai
-School
-Hackathon
-Project
-Tech
-Stack:
-HTML,
-CSS,
-JavaScript,
-Firebase,
-Cloudinary
-Project
-link:
-https://memeshubbyshweta.netlify.app
-Built meme-sharing platform with real-time updates (Firebase DB) and Cloudinary-powered uploads, deployed in a tight hackathon build..
-Plantiful
-Tech
-Stack-HTML,
-CSS,
-JavaScript,
-Public
-APIs,
-React
-A web application designed to help users manage, track, and care for their indoor and outdoor plants effectively. The app allows users to add plants, set watering and fertilizing schedules, receive reminders, and get plant care tips.
-CERTIFICATION
-AZ-900 (Microsoft Azure Fundamental Certificate)
-Xto10X Hackathon – Edition 4.0
-Masai School
-ICITC Conference 2021 make portfolio
+Welcome to my personal portfolio repository! This project showcases my skills, experience, academic background, and the full-stack web applications I have built.
 
-This project was built with [Lovable](https://lovable.dev).
+**Live Portfolio Link:** [shweta-portfolio.lovable.app](https://shweta-portfolio.lovable.app)
 
-**Live app**: https://shweta-portfolio.lovable.app
+---
 
-## Build with Lovable
+## 👩‍💻 About Me
+I am a **Full Stack Developer** with hands-on experience building user-focused full-stack web applications. I enjoy solving complex problems, writing clean code, and creating responsive, meaningful web experiences.
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/ce173a6d-c255-4424-953c-0dc98ae41b45).
+*   🌱 **Current Focus:** Full Stack Web Development at Masai School.
+*   💼 **Experience:** Former Full Stack Web Development Intern at A2Z Infotech.
+*   🧠 **Core Competencies:** Data Structures & Algorithms, OOPs Concepts, Cloud Basics, and Agile workflows.
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+---
 
-## Development
+## 🛠 Tech Stack & Skills
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+*   **Languages:** JavaScript, TypeScript, React, HTML5, CSS3, SQL
+*   **Frontend Frameworks & Libraries:** React.js, Redux, Tailwind CSS, Bootstrap
+*   **Backend & APIs:** Node.js, Express.js, REST APIs
+*   **Databases & Cloud:** MongoDB, MySQL, Firebase (Auth, Realtime Database, Firestore, Hosting), Microsoft Azure (App Services, Functions, Storage)
+*   **Tools & Version Control:** Git, GitHub, VS Code, npm, Postman
 
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
-```
+---
+
+## 🚀 Featured Projects
+
+### 🏥 Healthy Habits Tracker
+A web application that allows users to securely track daily habits like water intake, exercise, sleep, and nutrition with live database syncing.
+*   **Tech Stack:** HTML, CSS, JavaScript, Firebase (Auth + Realtime Database)
+*   **Live Demo:** [Healthy Habits Tracker](https://healthy-habits-tracker-byshweta.netlify.app)
+
+### 😂 MemeHub (Masai School Hackathon)
+A dynamic meme-sharing web platform built during a fast-paced hackathon. Features include user profile galleries, cloud-powered image uploads, and real-time feed updates.
+*   **Tech Stack:** HTML, CSS, JavaScript, Firebase, Cloudinary
+*   **Live Demo:** [MemeHub](https://memeshubbyshweta.netlify.app)
+
+### 🌱 Plantiful
+A smart plant care management application designed to help users track watering/fertilising schedules, get care reminders, and access tips for indoor/outdoor gardens.
+*   **Tech Stack:** HTML, CSS, JavaScript, Public APIs, React
+*   **Repository:** [plant-app](https://github.com)
+
+---
+
+## 📜 Certifications
+*   **AZ-900:** Microsoft Azure Fundamentals Certificate
+*   **Xto10X Hackathon – Edition 4.0** (Masai School)
+*   **ICITC Conference 2021** Publication/Participation
+
+---
+
+## ⚡ Deployed with Lovable
+
+This project is built and continuously updated with [Lovable](https://lovable.dev).
+
+Every change made directly via the Lovable editor is seamlessly pushed to this repository, and any changes pushed to the `main` branch here will automatically sync right back into the Lovable dashboard.
+
+---
+
+## 🛠 Local Development Setup
+
+If you prefer to clone and work on this portfolio locally, ensure you have Node.js and npm installed.
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com
+   ```
+
+2. **Navigate into the project directory:**
+   ```bash
+   cd shweta-portfolio
+   ```
+
+3. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+4. **Start the local development server:**
+   ```bash
+   npm run dev
+   ```
+
+---
+
+## 🤝 Connect with Me
+*   **GitHub:** [@Shwetaaa-coder](https://github.com/Shwetaaa-coder)
+*   **LinkedIn:** [shweta-bangar](https://www.linkedin.com/in/shweta-bangar)
+*   **Email:** shwetavanve8@gmail.com
