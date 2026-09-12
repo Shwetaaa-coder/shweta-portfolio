@@ -5,6 +5,7 @@ import { ExternalLink, Github } from "lucide-react";
 import healthyHabitsImg from "@/assets/healthy-habits.jpg";
 import memehubImg from "@/assets/memehub.jpg";
 import plantifulImg from "@/assets/plantiful.png";
+import weatherAppImg from "@/assets/weather-app.png";
 
 const projects = [
   {
@@ -30,12 +31,20 @@ const projects = [
     link: "https://gardening-planner.vercel.app/",
     github: "https://github.com/Shwetaaa-coder/plant-app",
     image: plantifulImg
+  },
+  {
+    title: "WeatherApp",
+    description: "A responsive weather application that allows users to search for a city and view its 5-day weather forecast. It displays real-time weather information including temperature, weather conditions, humidity, wind speed, sunrise, and sunset using weather API data.",
+    techStack: ["HTML", "CSS", "JavaScript"],
+    link: "https://weather-app-seven-phi-89.vercel.app",
+    github: "https://github.com/Shwetaaa-coder/WeatherApp",
+    image: weatherAppImg
   }
 ];
 
 const Projects = () => {
   return (
-    <section className="py-20 px-6 bg-background" id="projects">
+    <section className="py-12 px-6 bg-background" id="projects">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center">
           Featured <span className="bg-gradient-primary bg-clip-text text-transparent">Projects</span>
@@ -100,7 +109,7 @@ const Projects = () => {
                     >
                       <a href={project.link} target="_blank" rel="noopener noreferrer">
                         <ExternalLink className="w-4 h-4" />
-                        Demo
+                        Live Demo
                       </a>
                     </Button>
                   </div>

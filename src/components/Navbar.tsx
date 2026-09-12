@@ -1,14 +1,15 @@
 import { Button } from "@/components/ui/button";
-import { Menu, X, FileText } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
 const resumeUrl = "/Shweta_Bangar_Resume.pdf";
 
-const ResumeLink = () => (
+const ResumeLink = ({ className }: { className?: string }) => (
   <a
     href={resumeUrl}
     target="_blank"
     rel="noopener noreferrer"
+    className={className}
     onClick={() => {
       setTimeout(() => {
         const link = document.createElement("a");
@@ -20,7 +21,6 @@ const ResumeLink = () => (
       }, 100);
     }}
   >
-    <FileText className="w-4 h-4" />
     Resume
   </a>
 );
@@ -29,7 +29,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: "Home", href: "#" },
+    { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
     { name: "Skills", href: "#skills" },
     { name: "Projects", href: "#projects" },
@@ -37,7 +37,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b">
+    <nav className="sticky top-0 z-50 w-full bg-background border-b">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           <a href="#" className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
@@ -55,9 +55,7 @@ const Navbar = () => {
                 {link.name}
               </a>
             ))}
-            <Button variant="outline" size="sm" className="gap-2" asChild>
-              <ResumeLink />
-            </Button>
+            <ResumeLink className="text-foreground/80 hover:text-primary transition-colors font-medium" />
           </div>
 
           {/* Mobile Menu Button */}
@@ -84,11 +82,7 @@ const Navbar = () => {
                 {link.name}
               </a>
             ))}
-            <div className="py-2">
-              <Button variant="outline" size="sm" className="gap-2" asChild>
-                <ResumeLink />
-              </Button>
-            </div>
+            <ResumeLink className="block py-2 text-foreground/80 hover:text-primary transition-colors font-medium" />
           </div>
         )}
       </div>

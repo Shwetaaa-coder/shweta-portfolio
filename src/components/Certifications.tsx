@@ -46,7 +46,7 @@ const certifications = [
 
 const Certifications = () => {
   return (
-    <section className="py-20 px-6 bg-gradient-subtle" id="certifications">
+    <section className="py-12 px-6 bg-background" id="certifications">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center">
           Certifications & <span className="bg-gradient-primary bg-clip-text text-transparent">Achievements</span>

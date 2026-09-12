@@ -70,7 +70,7 @@ const skillCategories = [
 
 const Skills = () => {
   return (
-    <section className="py-20 px-6 bg-background" id="skills">
+    <section className="py-12 px-6 bg-background" id="skills">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center">
           Technical <span className="bg-gradient-primary bg-clip-text text-transparent">Skills</span>

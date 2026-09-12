@@ -1,96 +1,43 @@
 import { Button } from "@/components/ui/button";
-import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-import { Mail, Linkedin, Github, Phone, FileText } from "lucide-react";
-import profileImage from "@/assets/profile.jpg";
+import { FileText } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-subtle px-6 py-20 pt-32">
-      <div className="max-w-6xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Left Side - Photo */}
-          <div className="flex justify-center md:justify-start">
-            <Avatar className="w-64 h-64 md:w-80 md:h-80 ring-4 ring-primary/20">
-              <AvatarImage src={profileImage} alt="Shweta Bangar" />
-              <AvatarFallback>SB</AvatarFallback>
-            </Avatar>
-          </div>
+    <section id="home" className="bg-background px-6 pt-8 pb-8">
+      <div className="max-w-3xl mx-auto text-center">
+        <h1 className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent">
+          Shweta Bangar
+        </h1>
 
-          {/* Right Side - Info */}
-          <div className="text-center md:text-left">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
-              Shweta Bangar
-            </h1>
-            
-            <p className="text-xl md:text-2xl text-foreground/80 mb-4 font-medium">
-              Full Stack Web Developer
-            </p>
-            
-            <p className="text-base text-muted-foreground mb-8">
-              Passionate about building scalable web applications with modern technologies. 
-              Specialized in React, Node.js, and cloud solutions.
-            </p>
-            
-            <div className="flex flex-wrap items-center justify-center md:justify-start gap-3 mb-8">
-              <Button 
-                variant="outline" 
-                size="lg" 
-                className="gap-2"
-                asChild
-              >
-                <a 
-                  href="/Shweta_Bangar_Resume.pdf" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  onClick={() => {
-                    setTimeout(() => {
-                      const link = document.createElement("a");
-                      link.href = "/Shweta_Bangar_Resume.pdf";
-                      link.download = "Shweta_Bangar_Resume.pdf";
-                      document.body.appendChild(link);
-                      link.click();
-                      document.body.removeChild(link);
-                    }, 100);
-                  }}
-                >
-                  <FileText className="w-5 h-5" />
-                  Resume
-                </a>
-              </Button>
-              
-              <Button 
-                variant="outline" 
-                size="icon"
-                asChild
-              >
-                <a href="https://www.linkedin.com/in/shweta-bangar" target="_blank" rel="noopener noreferrer">
-                  <Linkedin className="w-5 h-5" />
-                </a>
-              </Button>
-              
-              <Button 
-                variant="outline" 
-                size="icon"
-                asChild
-              >
-                <a href="https://github.com/Shwetaaa-coder" target="_blank" rel="noopener noreferrer">
-                  <Github className="w-5 h-5" />
-                </a>
-              </Button>
-            </div>
-            
-            <div className="flex flex-col gap-3 text-sm text-muted-foreground">
-              <a href="mailto:shwetavanve8@gmail.com" className="flex items-center justify-center md:justify-start gap-2 hover:text-primary transition-colors">
-                <Mail className="w-4 h-4" />
-                shwetavanve8@gmail.com
-              </a>
-              <a href="tel:+917498924720" className="flex items-center justify-center md:justify-start gap-2 hover:text-primary transition-colors">
-                <Phone className="w-4 h-4" />
-                +91-7498924720
-              </a>
-            </div>
-          </div>
-        </div>
+        <p className="text-xl md:text-2xl text-foreground/80 mb-6 font-medium">
+          Hey, I'm a Full Stack Developer.
+        </p>
+
+        <Button
+          variant="outline"
+          size="lg"
+          className="gap-2"
+          asChild
+        >
+          <a
+            href="/Shweta_Bangar_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => {
+              setTimeout(() => {
+                const link = document.createElement("a");
+                link.href = "/Shweta_Bangar_Resume.pdf";
+                link.download = "Shweta_Bangar_Resume.pdf";
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              }, 100);
+            }}
+          >
+            <FileText className="w-5 h-5" />
+            Resume
+          </a>
+        </Button>
       </div>
     </section>
   );
